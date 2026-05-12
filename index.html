@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer=""></script>
     <title>Frontend Mentor | E-commerce product page</title>
   </head>
   <body>
     <header class="site-header">
       <div class="header-inner">
         <button class="icon-button menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
-          <img src="./images/icon-menu.svg" alt="" aria-hidden="true" />
+          <img src="./images/icon-menu.svg" alt="" aria-hidden="true">
         </button>
 
         <a class="logo-link" href="#" aria-label="Sneakers home">
-          <img class="logo" src="./images/logo.svg" alt="sneakers" />
+          <img class="logo" src="./images/logo.svg" alt="sneakers">
         </a>
 
         <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
           <button class="icon-button menu-close" type="button" aria-label="Close menu">
-            <img src="./images/icon-close.svg" alt="" aria-hidden="true" />
+            <img src="./images/icon-close.svg" alt="" aria-hidden="true">
           </button>
           <ul>
             <li><a href="#">Collections</a></li>
@@ -39,49 +35,57 @@
         </nav>
 
         <div class="header-actions">
-          <button class="cart-toggle" type="button" aria-label="Open cart" aria-expanded="false" aria-controls="cart-panel">
-            <span class="cart-count" aria-label="0 items in cart" hidden>0</span>
-            <img src="./images/icon-cart.svg" alt="" aria-hidden="true" />
+          <button class="cart-toggle" type="button" aria-label="Open cart, 0 items in cart" aria-expanded="false" aria-controls="cart-panel">
+            <span class="cart-count" aria-hidden="true" hidden="">0</span>
+            <img src="./images/icon-cart.svg" alt="" aria-hidden="true">
           </button>
           <button class="avatar-button" type="button" aria-label="User profile">
-            <img src="./images/image-avatar.png" alt="" />
+            <img src="./images/image-avatar.png" alt="">
           </button>
         </div>
       </div>
     </header>
 
-    <div class="page-overlay" data-overlay hidden></div>
+    <div class="page-overlay" data-overlay="" hidden=""></div>
 
     <main class="product-page">
       <section class="gallery" aria-label="Product gallery">
         <div class="product-image-wrap">
           <button class="gallery-nav gallery-nav--previous mobile-gallery-nav" type="button" aria-label="Previous image">
-            <img src="./images/icon-previous.svg" alt="" aria-hidden="true" />
+            <img src="./images/icon-previous.svg" alt="" aria-hidden="true">
           </button>
 
           <button class="main-image-button" type="button" aria-label="Open product image gallery">
-            <img class="main-product-image" src="./images/image-product-1.jpg" alt="Fall Limited Edition Sneakers" />
+            <img class="main-product-image" src="./images/image-product-1.jpg" alt="Fall Limited Edition Sneakers">
           </button>
 
           <button class="gallery-nav gallery-nav--next mobile-gallery-nav" type="button" aria-label="Next image">
-            <img src="./images/icon-next.svg" alt="" aria-hidden="true" />
+            <img src="./images/icon-next.svg" alt="" aria-hidden="true">
           </button>
         </div>
 
-        <div class="thumbnail-list" role="list" aria-label="Product image thumbnails">
-          <button class="thumbnail is-active" type="button" data-index="0" aria-label="Show product image 1" aria-current="true">
-            <img src="./images/image-product-1-thumbnail.jpg" alt="" />
-          </button>
-          <button class="thumbnail" type="button" data-index="1" aria-label="Show product image 2">
-            <img src="./images/image-product-2-thumbnail.jpg" alt="" />
-          </button>
-          <button class="thumbnail" type="button" data-index="2" aria-label="Show product image 3">
-            <img src="./images/image-product-3-thumbnail.jpg" alt="" />
-          </button>
-          <button class="thumbnail" type="button" data-index="3" aria-label="Show product image 4">
-            <img src="./images/image-product-4-thumbnail.jpg" alt="" />
-          </button>
-        </div>
+        <ul class="thumbnail-list" aria-label="Product image thumbnails">
+          <li>
+            <button class="thumbnail is-active" type="button" data-index="0" aria-label="Show product image 1" aria-current="true">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="">
+            </button>
+          </li>
+          <li>
+            <button class="thumbnail" type="button" data-index="1" aria-label="Show product image 2">
+              <img src="./images/image-product-2-thumbnail.jpg" alt="">
+            </button>
+          </li>
+          <li>
+            <button class="thumbnail" type="button" data-index="2" aria-label="Show product image 3">
+              <img src="./images/image-product-3-thumbnail.jpg" alt="">
+            </button>
+          </li>
+          <li>
+            <button class="thumbnail" type="button" data-index="3" aria-label="Show product image 4">
+              <img src="./images/image-product-4-thumbnail.jpg" alt="">
+            </button>
+          </li>
+        </ul>
       </section>
 
       <section class="product-info" aria-labelledby="product-title">
@@ -102,60 +106,67 @@
         <div class="purchase-controls">
           <div class="quantity-control" aria-label="Quantity selector">
             <button class="quantity-button" type="button" data-action="decrease" aria-label="Decrease quantity">
-              <img src="./images/icon-minus.svg" alt="" aria-hidden="true" />
+              <img src="./images/icon-minus.svg" alt="" aria-hidden="true">
             </button>
             <output class="quantity-value" aria-live="polite">0</output>
             <button class="quantity-button" type="button" data-action="increase" aria-label="Increase quantity">
-              <img src="./images/icon-plus.svg" alt="" aria-hidden="true" />
+              <img src="./images/icon-plus.svg" alt="" aria-hidden="true">
             </button>
           </div>
 
           <button class="add-to-cart" type="button">
-            <img src="./images/icon-cart.svg" alt="" aria-hidden="true" />
+            <img src="./images/icon-cart.svg" alt="" aria-hidden="true">
             Add to cart
           </button>
         </div>
       </section>
     </main>
 
-    <section class="cart-panel" id="cart-panel" aria-label="Shopping cart" hidden>
+    <section class="cart-panel" id="cart-panel" aria-label="Shopping cart" hidden="">
       <h2>Cart</h2>
-      <div class="cart-content" aria-live="polite">
-        <p class="empty-cart-message">Your cart is empty.</p>
-      </div>
+      <div class="cart-content" aria-live="polite"><p class="empty-cart-message">Your cart is empty.</p></div>
     </section>
 
-    <section class="lightbox" aria-label="Product image lightbox" aria-modal="true" role="dialog" hidden>
+    <section class="lightbox" aria-label="Product image lightbox" aria-modal="true" role="dialog" hidden="">
       <div class="lightbox-inner">
         <button class="lightbox-close" type="button" aria-label="Close image gallery">
-          <img src="./images/icon-close.svg" alt="" aria-hidden="true" />
+          <img src="./images/icon-close.svg" alt="" aria-hidden="true">
         </button>
 
         <div class="lightbox-image-wrap">
           <button class="gallery-nav gallery-nav--previous lightbox-previous" type="button" aria-label="Previous image">
-            <img src="./images/icon-previous.svg" alt="" aria-hidden="true" />
+            <img src="./images/icon-previous.svg" alt="" aria-hidden="true">
           </button>
-          <img class="lightbox-image" src="./images/image-product-1.jpg" alt="Fall Limited Edition Sneakers" />
+          <img class="lightbox-image" src="./images/image-product-1.jpg" alt="Fall Limited Edition Sneakers">
           <button class="gallery-nav gallery-nav--next lightbox-next" type="button" aria-label="Next image">
-            <img src="./images/icon-next.svg" alt="" aria-hidden="true" />
+            <img src="./images/icon-next.svg" alt="" aria-hidden="true">
           </button>
         </div>
 
-        <div class="thumbnail-list lightbox-thumbnails" role="list" aria-label="Lightbox product image thumbnails">
-          <button class="thumbnail is-active" type="button" data-index="0" aria-label="Show product image 1" aria-current="true">
-            <img src="./images/image-product-1-thumbnail.jpg" alt="" />
-          </button>
-          <button class="thumbnail" type="button" data-index="1" aria-label="Show product image 2">
-            <img src="./images/image-product-2-thumbnail.jpg" alt="" />
-          </button>
-          <button class="thumbnail" type="button" data-index="2" aria-label="Show product image 3">
-            <img src="./images/image-product-3-thumbnail.jpg" alt="" />
-          </button>
-          <button class="thumbnail" type="button" data-index="3" aria-label="Show product image 4">
-            <img src="./images/image-product-4-thumbnail.jpg" alt="" />
-          </button>
-        </div>
+        <ul class="thumbnail-list lightbox-thumbnails" aria-label="Lightbox product image thumbnails">
+          <li>
+            <button class="thumbnail is-active" type="button" data-index="0" aria-label="Show product image 1" aria-current="true">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="">
+            </button>
+          </li>
+          <li>
+            <button class="thumbnail" type="button" data-index="1" aria-label="Show product image 2">
+              <img src="./images/image-product-2-thumbnail.jpg" alt="">
+            </button>
+          </li>
+          <li>
+            <button class="thumbnail" type="button" data-index="2" aria-label="Show product image 3">
+              <img src="./images/image-product-3-thumbnail.jpg" alt="">
+            </button>
+          </li>
+          <li>
+            <button class="thumbnail" type="button" data-index="3" aria-label="Show product image 4">
+              <img src="./images/image-product-4-thumbnail.jpg" alt="">
+            </button>
+          </li>
+        </ul>
       </div>
     </section>
-  </body>
-</html>
+  
+
+</body></html>
