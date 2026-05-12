@@ -240,6 +240,9 @@ a:focus-visible {
 
 .thumbnail-list {
   display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .product-info {
@@ -621,6 +624,7 @@ h1 {
 
   .thumbnail {
     position: relative;
+    inline-size: 100%;
     overflow: hidden;
     border-radius: var(--radius-sm);
     background: var(--clr-white);
