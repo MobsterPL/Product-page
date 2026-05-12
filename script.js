@@ -92,11 +92,11 @@ function updateCartBadge() {
   if (state.cartQuantity > 0) {
     cartCount.hidden = false;
     cartCount.textContent = state.cartQuantity;
-    cartCount.setAttribute("aria-label", `${state.cartQuantity} items in cart`);
+    cartToggle.setAttribute("aria-label", `Open cart, ${state.cartQuantity} items in cart`);
   } else {
     cartCount.hidden = true;
     cartCount.textContent = "0";
-    cartCount.setAttribute("aria-label", "0 items in cart");
+    cartToggle.setAttribute("aria-label", "Open cart, 0 items in cart");
   }
 }
 
